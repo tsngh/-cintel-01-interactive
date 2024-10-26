@@ -12,5 +12,5 @@ with ui.sidebar():
 def histogram():
     np.random.seed(19680801)
     x = 100 + 15 * np.random.randn(437)
-    plt.hist(x, input.selected_number_of_bins(), color="green", density=True)
+    plt.hist(x, input.selected_number_of_bins(), color="green", edgecolor= "black", density=True)
     plt.title("A Random Histogram Example")
